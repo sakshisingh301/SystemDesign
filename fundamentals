@@ -1,14 +1,40 @@
-CLIENT AND SERVER MODEL
+CLIENT AND SERVER MODEL : 
 
 client : machine or process that request data from servers.
 server : machine which provide data to client .
 
 what happens when you search something on internet?
 
-users access website through domain main and connects to DNS service which is third party service which provide ip address of the website that we want to hit .
+1. users access website through domain main and connects to DNS service which is third party service which provide ip address of the website that we want to hit .
 
-once we have gotten the ip address , request will be send it server directly and response is returned in the form of HTML pages or json. 
+2. once we have gotten the ip address , request will be send it server directly and response is returned in the form of HTML pages or json. 
 
 ![Client-Server-Architecture-working-1024x800](https://user-images.githubusercontent.com/65009101/210224478-7d9010b6-780b-4a61-a93b-9858ed6a1499.png)
+
+
+NETWORK PROTOCOL :
+
+client and server communicate with each other through network protocol like IP , TCP,HTTP.
+
+IP: INTERNET PROTOCOL
+
+its a basic packet through which message(text,image,json etc) are sent from one machine to another . it consists of header and payload . header contains 
+the address for source and destination whereas payload is actual message that you want to transport .
+
+what if the size of messages are big?
+
+there will be multiple ip packets which will be sent .
+
+cons: if multiple packets are sent then we have to make sure that we are not missing any packets which is a drawback in internet protocol
+
+TCP : TRANSFER CONTROL PROTOCOL
+
+network protocol build on the top of IP for ordered and reliable data delievery.
+
+HTTP: HYPER TEXT MARKUP TEXT
+
+network protocol build on the top of tcp , which includes request and response.
+
+
 
 
